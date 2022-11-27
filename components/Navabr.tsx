@@ -55,7 +55,9 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Image src="/images/logo.jpeg" w={{ base: 60, md: 200 }} />
+          <Link href="/">
+            <Image src="/images/logo.jpeg" w={{ base: 60, md: 200 }} />
+          </Link>
         </Flex>
         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
           <DesktopNav />
@@ -77,20 +79,18 @@ const DesktopNav = () => {
   return (
     <Stack direction={'row'} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
-          <ChakraLink
-            p={2}
-            href={navItem.href ?? '#'}
-            fontSize={'lg'}
-            fontWeight={700}
-            color="brand.900"
-            _hover={{
-              textDecoration: 'underline',
-              color: linkHoverColor,
-            }}
-          >
-            {navItem.label}
-          </ChakraLink>
+        <Box
+          key={navItem.label}
+          p={2}
+          fontSize={'lg'}
+          fontWeight={700}
+          color="brand.900"
+          _hover={{
+            textDecoration: 'underline',
+            color: linkHoverColor,
+          }}
+        >
+          <Link href={navItem.href ?? '#'}>{navItem.label}</Link>
         </Box>
       ))}
     </Stack>
@@ -196,7 +196,7 @@ const NAV_ITEMS: Array<NavItem> = [
     href: 'speisekarte',
   },
   {
-    label: 'Find Work',
+    label: 'Kontaktieren',
     href: 'Kontaktieren',
   },
 ];
