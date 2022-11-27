@@ -1,5 +1,13 @@
 import React from 'react';
-import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Heading,
+  IconButton,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
@@ -40,7 +48,7 @@ export default function Carousel() {
     <Box
       position={'relative'}
       height={'750px'}
-      width={'full'}
+      width={'100%'}
       overflow={'hidden'}
     >
       {/* CSS files for react-slick */}
@@ -95,8 +103,28 @@ export default function Carousel() {
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
-            backgroundImage={`url(${url})`}
-          />
+            bgImage={`linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(${url})`}
+          >
+            <Container size="container.lg" height="600px" position="relative">
+              <Stack
+                spacing={6}
+                w={'100%'}
+                maxW={'lg'}
+                position="absolute"
+                top="50%"
+                transform="translate(0, -50%)"
+              >
+                <Heading fontSize={{ base: '24px', lg: '64px' }} color="#fff">
+                  Indian Restaurant for You
+                </Heading>
+                <Text fontSize={{ base: '14px', lg: '24px' }} color="#fff">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem corporis doloremque ducimus quidem voluptatibus
+                  minima omnis voluptatum, possimus asperiores enim.
+                </Text>
+              </Stack>
+            </Container>
+          </Box>
         ))}
       </Slider>
     </Box>

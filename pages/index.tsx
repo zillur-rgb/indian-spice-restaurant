@@ -8,6 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Box, VStack } from '@chakra-ui/react';
 import Hero from '../components/Hero';
 import Gallery from '../components/Gallery';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -23,19 +24,7 @@ export default function Home() {
         <Carousel />
         <Gallery />
       </VStack>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer />
     </Box>
   );
 }
