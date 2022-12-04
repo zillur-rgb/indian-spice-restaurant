@@ -103,24 +103,29 @@ export default function Carousel() {
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
-            bgImage={`linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(${url})`}
+            bgImage={`linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.7)) , url(${url})`}
+            w="100%"
           >
-            <Container size="container.lg" height="600px" position="relative">
+            <Container
+              size="container.lg"
+              height="600px"
+              position="relative"
+              w="700px"
+            >
               <Stack
                 spacing={6}
-                w={'100%'}
-                maxW={'lg'}
-                position="absolute"
-                top="50%"
-                transform="translate(0, -50%)"
+                w={'700px'}
+                pt={{ base: '40px', lg: '220px' }}
+                ml={{ base: '-40px', lg: '-100px' }}
               >
                 <Heading fontSize={{ base: '24px', lg: '64px' }} color="#fff">
-                  Indian Restaurant for You
+                  Das Team-Restaurant Indian Spice heißt Sie herzlich
+                  willkommen.
                 </Heading>
                 <Text fontSize={{ base: '14px', lg: '24px' }} color="#fff">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem corporis doloremque ducimus quidem voluptatibus
-                  minima omnis voluptatum, possimus asperiores enim.
+                  Über unseren Außer-Haus-Service können Sie bequem per Telefon
+                  oder WhatsApp Ihr gewünschtes Gericht bestellen und nach etwa
+                  20-30 Minuten im Restaurant abholen.
                 </Text>
               </Stack>
             </Container>
