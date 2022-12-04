@@ -47,7 +47,7 @@ export default function Carousel() {
   return (
     <Box
       position={'relative'}
-      height={'750px'}
+      height={{ base: '550px', md: '750px' }}
       width={'100%'}
       overflow={'hidden'}
     >
@@ -98,7 +98,7 @@ export default function Carousel() {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            height={{ base: '3xl', md: '6xl' }}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
@@ -108,21 +108,29 @@ export default function Carousel() {
           >
             <Container
               size="container.lg"
-              height="600px"
+              height={{ base: '400px', md: '600px' }}
               position="relative"
               w="700px"
             >
               <Stack
                 spacing={6}
                 w={'700px'}
-                pt={{ base: '40px', lg: '220px' }}
-                ml={{ base: '-40px', lg: '-100px' }}
+                pt={{ base: '100px', lg: '220px' }}
+                ml={{ base: '0px', lg: '-100px' }}
               >
-                <Heading fontSize={{ base: '24px', lg: '64px' }} color="#fff">
+                <Heading
+                  pr={{ base: '400px', md: 0 }}
+                  fontSize={{ base: '24px', lg: '64px' }}
+                  color="#fff"
+                >
                   Das Team-Restaurant Indian Spice heißt Sie herzlich
                   willkommen.
                 </Heading>
-                <Text fontSize={{ base: '14px', lg: '24px' }} color="#fff">
+                <Text
+                  pr={{ base: '400px', md: 0 }}
+                  fontSize={{ base: '14px', lg: '24px' }}
+                  color="#fff"
+                >
                   Über unseren Außer-Haus-Service können Sie bequem per Telefon
                   oder WhatsApp Ihr gewünschtes Gericht bestellen und nach etwa
                   20-30 Minuten im Restaurant abholen.

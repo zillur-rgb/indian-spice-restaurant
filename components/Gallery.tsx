@@ -21,7 +21,13 @@ export default function Gallery() {
       <Text py={10} fontSize="32px" color="#fff" fontWeight={700}>
         Unsere Gallerie
       </Text>
-      <Grid templateColumns="repeat(4, 1fr)">
+      <Grid
+        templateColumns={{
+          base: 'repeat(1, 1fr)',
+          md: 'repeat(2, 1fr)',
+          lg: 'repeat(4, 1fr)',
+        }}
+      >
         {images.map((image) => (
           <Image src={image} key={image} h="300px" w="100%" objectFit="cover" />
         ))}
