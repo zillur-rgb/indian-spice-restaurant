@@ -38,10 +38,10 @@ export default function Carousel() {
 
   // These are the images used in the slide
   const cards = [
-    'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    'https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    'https://images.unsplash.com/photo-1567337710282-00832b415979?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80',
-    'https://images.unsplash.com/photo-1536304575888-ccb70eeef59b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    '/images/interior1.jpeg',
+    '/images/spice2.jpeg',
+    '/images/spice3.jpeg',
+    '/images/qspice.jpg',
   ];
 
   return (
@@ -122,19 +122,11 @@ export default function Carousel() {
                   pr={{ base: '400px', md: 0 }}
                   fontSize={{ base: '24px', lg: '64px' }}
                   color="#fff"
+                  textAlign={'center'}
                 >
                   Das Team-Restaurant Indian Spice heißt Sie herzlich
                   willkommen.
                 </Heading>
-                <Text
-                  pr={{ base: '400px', md: 0 }}
-                  fontSize={{ base: '14px', lg: '24px' }}
-                  color="#fff"
-                >
-                  Über unseren Außer-Haus-Service können Sie bequem per Telefon
-                  oder WhatsApp Ihr gewünschtes Gericht bestellen und nach etwa
-                  20-30 Minuten im Restaurant abholen.
-                </Text>
               </Stack>
             </Container>
           </Box>

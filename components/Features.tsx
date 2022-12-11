@@ -19,7 +19,7 @@ const Features = () => {
     {
       id: 1,
       title: 'PARTYSERVICE',
-      desc: 'Feiern Sie im Restaurant Indian Spice oder Zuhause mit unserem Party-Service. Unsere Räumlichkeiten verfügen über 60 Sitz-Plätze, direkt vor dem Restaurant sind ausreichend Parkplätze vorhanden.',
+      desc: 'Feiern Sie im Restaurant Indian Spice oder Zuhause mit unserem PartyService! Unser Restaurant verfügt über 70 Sitzplätze und einen schönen Biergarten mit 80 Sitzplätzen außen. In der Nähe gibt es 200 kostenlose Parkplätze ( Graf-Kessel-Str.) Wir organisieren Ihre Feierlichkeiten! Hochzeiten, Weihnachtsfeier Kommunion, Konfirmation, Trauerfeier & Firmenfeste. Reservieren Sie rechtzeitig bei uns Telefon: 02181-62186 .',
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ const Features = () => {
   return (
     <Box
       w={'full'}
-      h={'70vh'}
+      h={'auto'}
       backgroundImage={'url(/images/qspice.jpg)'}
       backgroundSize={'cover'}
       backgroundPosition={'center center'}
@@ -47,7 +47,7 @@ const Features = () => {
         gap={8}
       >
         {features.map((feature) => (
-          <Card bg={'brand.900'} key={feature.id} h="400px">
+          <Card bg={'brand.900'} key={feature.id} h="500px">
             <CardBody color="#fff" pos={'relative'}>
               <Text fontSize={24} py={4} borderBottom="1px solid #aaa">
                 {feature.title}

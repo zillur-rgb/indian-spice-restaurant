@@ -6,7 +6,7 @@ import Head from 'next/head';
 export default function App({ Component, pageProps }: AppProps) {
   const colors = {
     brand: {
-      900: '#c0392b',
+      900: '#5E0616',
       800: '#153e75',
       700: '#2a69ac',
     },
