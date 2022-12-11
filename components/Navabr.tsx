@@ -33,7 +33,6 @@ export default function Navbar() {
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'20px'}
-        py={{ base: 2 }}
         px={{ base: 4, md: 28 }}
         borderBottom={1}
         borderStyle={'solid'}
@@ -56,7 +55,7 @@ export default function Navbar() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Link href="/">
-            <Image src="/images/logo.jpeg" w={{ base: 30, md: 200 }} />
+            <Image src="/images/logo.jpeg" w={{ base: 30, md: 140 }} />
           </Link>
         </Flex>
         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -101,6 +100,8 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <ChakraLink
       href={href}
+      isExternal
+      target="_blank"
       role={'group'}
       display={'block'}
       p={2}
@@ -192,11 +193,31 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
+    label: 'Startseite',
+    href: '/',
+  },
+  {
     label: 'Speisekarte',
-    href: 'speisekarte',
+    href: 'https://drive.google.com/file/d/1WPGwryA3t6uNPGh5P3HOcQZgqFk61AyG/view?usp=sharingssssss',
   },
   {
     label: 'Kontaktieren',
     href: 'Kontaktieren',
+  },
+  {
+    label: 'Reservieren',
+    href: 'reservieren',
+  },
+  {
+    label: 'Service',
+    href: 'service',
+  },
+  {
+    label: 'Impressum',
+    href: 'impressum',
+  },
+  {
+    label: 'Datenschutz',
+    href: 'datenschutz',
   },
 ];

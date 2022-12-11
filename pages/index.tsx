@@ -9,6 +9,8 @@ import { Box, VStack } from '@chakra-ui/react';
 import Hero from '../components/Hero';
 import Gallery from '../components/Gallery';
 import Footer from '../components/Footer';
+import HeroContact from '../components/HeroContact';
+import Features from '../components/Features';
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <VStack minH="100vh" w="100%" overflow="hidden" h="auto" spacing={0}>
         <Navbar />
         <Carousel />
+        <HeroContact />
+        <Features />
         <Gallery />
       </VStack>
       <Footer />

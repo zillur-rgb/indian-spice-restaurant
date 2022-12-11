@@ -17,9 +17,21 @@ export default function Gallery() {
     '/images/interior6.jpeg',
   ];
   return (
-    <VStack>
+    <VStack px={{ base: 4, md: 80 }}>
       <Text py={10} fontSize="32px" color="#fff" fontWeight={700}>
         Unsere Gallerie
+      </Text>
+      <Text
+        w="60%"
+        mx="auto"
+        textAlign={'center'}
+        color="#fff"
+        pb={10}
+        fontSize={24}
+      >
+        Gern begrüßen wir Sie in unseren Räumlichkeiten in ruhiger Atmosphäre,
+        zu einem kühlen Getränk im grünen Biergarten oder liefern für Ihre
+        Feierlichkeit zu Ihnen nach Hause!
       </Text>
       <Grid
         templateColumns={{
@@ -27,9 +39,19 @@ export default function Gallery() {
           md: 'repeat(2, 1fr)',
           lg: 'repeat(4, 1fr)',
         }}
+        gap={8}
       >
         {images.map((image) => (
-          <Image src={image} key={image} h="300px" w="100%" objectFit="cover" />
+          <Image
+            _hover={{
+              bgOpacity: '.8',
+            }}
+            src={image}
+            key={image}
+            h="200px"
+            w="100%"
+            objectFit="cover"
+          />
         ))}
       </Grid>
     </VStack>
