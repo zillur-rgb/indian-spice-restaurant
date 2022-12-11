@@ -113,21 +113,18 @@ export default function Carousel() {
               size="container.lg"
               height={{ base: '400px', md: '600px' }}
               position="relative"
-              w="700px"
+              w={{ base: '100%', md: '700px' }}
             >
               <VStack
                 spacing={6}
-                w={'700px'}
+                w={{ base: '100%', md: '700px' }}
+                overflow={{ base: 'hidden', md: 'auto' }}
                 pt={{ base: '70px', lg: '150px' }}
                 ml={{ base: '0px', lg: '-100px' }}
               >
-                <Image
-                  src="/images/logo.jpeg"
-                  w={{ base: 40, md: 200 }}
-                  ml={{ base: '-400px', md: 0 }}
-                />
+                <Image src="/images/logo.jpeg" w={{ base: 150, md: 200 }} />
                 <Heading
-                  pr={{ base: '400px', md: 0 }}
+                  pr={{ base: '0', md: 0 }}
                   fontSize={{ base: '28px', lg: '64px' }}
                   color="#fff"
                   textAlign={'center'}
