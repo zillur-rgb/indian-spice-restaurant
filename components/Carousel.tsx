@@ -41,6 +41,7 @@ export default function Carousel() {
     '/images/interior1.jpeg',
     '/images/spice2.jpeg',
     '/images/spice3.jpeg',
+    '/images/spice4.jpeg',
     '/images/qspice.jpg',
   ];
 
