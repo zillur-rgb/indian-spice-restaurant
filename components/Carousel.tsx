@@ -7,6 +7,8 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  Image,
+  VStack,
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
@@ -113,22 +115,27 @@ export default function Carousel() {
               position="relative"
               w="700px"
             >
-              <Stack
+              <VStack
                 spacing={6}
                 w={'700px'}
-                pt={{ base: '100px', lg: '220px' }}
+                pt={{ base: '70px', lg: '150px' }}
                 ml={{ base: '0px', lg: '-100px' }}
               >
+                <Image
+                  src="/images/logo.jpeg"
+                  w={{ base: 40, md: 200 }}
+                  ml={{ base: '-400px', md: 0 }}
+                />
                 <Heading
                   pr={{ base: '400px', md: 0 }}
-                  fontSize={{ base: '24px', lg: '64px' }}
+                  fontSize={{ base: '28px', lg: '64px' }}
                   color="#fff"
                   textAlign={'center'}
                 >
                   Das Team-Restaurant Indian Spice heißt Sie herzlich
                   willkommen.
                 </Heading>
-              </Stack>
+              </VStack>
             </Container>
           </Box>
         ))}

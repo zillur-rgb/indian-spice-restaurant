@@ -12,13 +12,8 @@ import React from 'react';
 const Features = () => {
   const features = [
     {
-      id: 0,
-      title: 'FEIERLICHKEITEN',
-      desc: 'Ab sofort steht für Seminare ein seperater Raum zur Verfügung für ca. 45 Personen! Wir organisieren Ihre Feierlich- keiten! Hochzeiten, Weihnachtsfeiern, Kommunion/Konfirmation, Trauerfeiern, Firmenfeste, Frühstück, Brunch usw.',
-    },
-    {
       id: 1,
-      title: 'PARTYSERVICE',
+      title: 'Feierlichkeiten',
       desc: 'Feiern Sie im Restaurant Indian Spice oder Zuhause mit unserem PartyService! Unser Restaurant verfügt über 70 Sitzplätze und einen schönen Biergarten mit 80 Sitzplätzen außen. In der Nähe gibt es 200 kostenlose Parkplätze ( Graf-Kessel-Str.) Wir organisieren Ihre Feierlichkeiten! Hochzeiten, Weihnachtsfeier Kommunion, Konfirmation, Trauerfeier & Firmenfeste. Reservieren Sie rechtzeitig bei uns Telefon: 02181-62186 .',
     },
     {
@@ -42,12 +37,11 @@ const Features = () => {
         templateColumns={{
           base: 'repeat(1, 1fr)',
           md: 'repeat(2, 1fr)',
-          lg: 'repeat(3, 1fr)',
         }}
         gap={8}
       >
         {features.map((feature) => (
-          <Card bg={'brand.900'} key={feature.id} h="500px">
+          <Card bg={'brand.900'} key={feature.id} h="400px" w="full">
             <CardBody color="#fff" pos={'relative'}>
               <Text fontSize={24} py={4} borderBottom="1px solid #aaa">
                 {feature.title}
