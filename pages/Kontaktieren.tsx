@@ -12,7 +12,7 @@ export default function Kontaktieren() {
           <Box as="span" fontWeight={700} fontStyle="italic">
             Adresse:
           </Box>{' '}
-          Bahnstraße 20, 45515 Grevenboich
+          Bahnstraße 20, 41515 Grevenboich
         </Text>
         <Text color="#fff" fontSize={24}>
           <Box as="span" fontWeight={700} fontStyle="italic">

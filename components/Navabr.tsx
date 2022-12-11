@@ -53,9 +53,14 @@ export default function Navbar() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+        <Flex
+          w="100%"
+          flex={{ base: 'auto', md: 1 }}
+          justify={{ base: 'center', md: 'start' }}
+          align={{ base: 'center', md: 'start' }}
+        >
           <Link href="/">
-            <Image src="/images/logo.jpeg" w={{ base: 200, md: 140 }} />
+            <Image src="/images/logo.jpeg" w={{ base: 200, md: 240 }} />
           </Link>
         </Flex>
         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

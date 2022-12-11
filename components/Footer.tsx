@@ -97,7 +97,7 @@ export default function Footer() {
           </Text>
           <Text>Restaurant Indian Spice</Text>
           <Text>Bahnstraße 20, </Text>
-          <Text>45515 Grevenboich</Text>
+          <Text>41515 Grevenboich</Text>
         </VStack>
         <VStack align={{ base: 'center', md: 'flex-start' }}>
           <Text fontSize={32} fontWeight="700">
