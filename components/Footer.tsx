@@ -80,18 +80,20 @@ export default function Footer() {
       >
         <VStack align={{ base: 'center', md: 'flex-start' }}>
           <Text fontSize={32} fontWeight="700">
-            Anschrift
+            Öffnungszeiten
           </Text>
-          <Text>Restaurant Indian Spice</Text>
-          <Text>Telefon: 02181/62186</Text>
-          <Text>Whatsapp: 0176/32237918</Text>
+          <Text>Dienstag Ruhetag</Text>
+          <Text textAlign={{ base: 'center', md: 'start' }}>
+            Montag & Mittwoch - Samstag 15:30 Uhr bis 22:00 Uhr
+          </Text>
+          <Text>Sonntag & Feiertag 11:30 Uhr bis 22:00 Uhr</Text>
         </VStack>
         <VStack
           py={{ base: 8, md: 16 }}
           align={{ base: 'center', md: 'flex-start' }}
         >
           <Text fontSize={32} fontWeight="700">
-            Kontakt
+            Anschrift
           </Text>
           <Text>Restaurant Indian Spice</Text>
           <Text>Bahnstraße 20, </Text>
@@ -99,11 +101,11 @@ export default function Footer() {
         </VStack>
         <VStack align={{ base: 'center', md: 'flex-start' }}>
           <Text fontSize={32} fontWeight="700">
-            Öffnungszeiten
+            Kontakt
           </Text>
-          <Text>Dienstag Ruhetag</Text>
-          <Text>Montag & Mittwoch - Samstag 15:30 Uhr bis 22:00 Uhr</Text>
-          <Text>Sonntag & Feiertag 11:30 Uhr bis 22:00 Uhr</Text>
+          <Text>Restaurant Indian Spice</Text>
+          <Text>Telefon: 02181/62186</Text>
+          <Text>Whatsapp: 0176/32237918</Text>
         </VStack>
       </Flex>
     </Box>
