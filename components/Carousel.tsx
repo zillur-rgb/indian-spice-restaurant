@@ -121,18 +121,7 @@ export default function Carousel() {
                 overflow={{ base: 'hidden', md: 'auto' }}
                 pt={{ base: '70px', lg: '150px' }}
                 ml={{ base: '0px', lg: '-100px' }}
-              >
-                <Image src="/images/logo.jpeg" w={{ base: 150, md: 200 }} />
-                <Heading
-                  pr={{ base: '0', md: 0 }}
-                  fontSize={{ base: '28px', lg: '64px' }}
-                  color="#fff"
-                  textAlign={'center'}
-                >
-                  Das Team-Restaurant Indian Spice heißt Sie herzlich
-                  willkommen.
-                </Heading>
-              </VStack>
+              ></VStack>
             </Container>
           </Box>
         ))}

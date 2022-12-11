@@ -15,12 +15,12 @@ export default function Gallery() {
     '/images/qspice.jpg',
   ];
   return (
-    <VStack px={{ base: 4, md: 80 }}>
+    <VStack px={{ base: 0, md: 80 }}>
       <Text py={10} fontSize="32px" color="#fff" fontWeight={700}>
         Unsere Gallerie
       </Text>
       <Text
-        w="60%"
+        w={{ base: '90%', md: '60%' }}
         mx="auto"
         textAlign={'center'}
         color="#fff"
@@ -38,6 +38,9 @@ export default function Gallery() {
           lg: 'repeat(4, 1fr)',
         }}
         gap={8}
+        p={4}
+        bg="white"
+        w="100%"
       >
         {images.map((image) => (
           <Image

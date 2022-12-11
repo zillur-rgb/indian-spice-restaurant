@@ -7,7 +7,7 @@ export default function Kontaktieren() {
   return (
     <Box w="100%" h="100vh" bg="brand.900">
       <Navbar />
-      <VStack align={'flex-start'} px={28} spacing={8} py={12}>
+      <VStack align={'flex-start'} px={{ base: 0, md: 80 }} spacing={8} py={12}>
         <Text color="#fff" fontSize={24}>
           <Box as="span" fontWeight={700} fontStyle="italic">
             Adresse:

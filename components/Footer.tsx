@@ -2,12 +2,14 @@ import {
   Box,
   chakra,
   Container,
+  Flex,
   HStack,
   Image,
   Stack,
   Text,
   useColorModeValue,
   VisuallyHidden,
+  VStack,
 } from '@chakra-ui/react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { ReactNode } from 'react';
@@ -67,31 +69,43 @@ const SocialButton = ({
 export default function Footer() {
   return (
     <Box bg="brand.900" color="#fff" w="100%">
-      <HStack
+      <Flex
         py={4}
-        px={28}
-        direction={{ base: 'column', md: 'row' }}
-        spacing={4}
-        w="100%"
+        px={{ base: 0, md: 80 }}
+        flexDir={{ base: 'column', md: 'row' }}
+        w="90%"
+        mx={{ base: 'auto', md: '' }}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}
       >
-        <Image src="/images/logo.jpeg" w="100px" />
-        <Text px={28} whiteSpace="nowrap">
-          © 2022 MD Zillur Rahman. All rights reserved
-        </Text>
-        <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
-          </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
-            <FaInstagram />
-          </SocialButton>
-        </Stack>
-      </HStack>
+        <VStack align={{ base: 'center', md: 'flex-start' }}>
+          <Text fontSize={32} fontWeight="700">
+            Anschrift
+          </Text>
+          <Text>Restaurant Indian Spice</Text>
+          <Text>Telefon: 02181/62186</Text>
+          <Text>Whatsapp: 0176/32237918</Text>
+        </VStack>
+        <VStack
+          py={{ base: 8, md: 16 }}
+          align={{ base: 'center', md: 'flex-start' }}
+        >
+          <Text fontSize={32} fontWeight="700">
+            Kontakt
+          </Text>
+          <Text>Restaurant Indian Spice</Text>
+          <Text>Bahnstraße 20, </Text>
+          <Text>45515 Grevenboich</Text>
+        </VStack>
+        <VStack align={{ base: 'center', md: 'flex-start' }}>
+          <Text fontSize={32} fontWeight="700">
+            Öffnungszeiten
+          </Text>
+          <Text>Dienstag Ruhetag</Text>
+          <Text>Montag & Mittwoch - Samstag 15:30 Uhr bis 22:00 Uhr</Text>
+          <Text>Sonntag & Feiertag 11:30 Uhr bis 22:00 Uhr</Text>
+        </VStack>
+      </Flex>
     </Box>
   );
 }
